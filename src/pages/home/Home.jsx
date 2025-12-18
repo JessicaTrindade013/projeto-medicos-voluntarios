@@ -48,13 +48,16 @@ const Home = () => {
           </article>
         </div>
       </section>
+
       <section className={s.sectionImpacto}>
+        <div className={s.impacto}> 
         <h2>Nosso Impacto</h2>
         <p>Transformando a saúde de nossa comunidade, um paciente de cada vez</p>
+        </div>
 
-        <div className={s.boxCards}>
+        <div className={s.boxCardsImpacto}>
           <article>
-            <h3>2,500+</h3>
+            <h3>2,500 +</h3>
             <p>Pessoas Atendidas</p>
           </article>
           <article>

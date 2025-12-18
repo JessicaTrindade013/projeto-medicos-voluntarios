@@ -1,113 +1,163 @@
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 6rem;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    .conteudo {
-        max-width: 480px;
+  padding: 6vh 8vw;
+  gap: 3rem;
+  min-height: 80vh;
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin: 1.5rem  0;
-            color: #000;
-        }
+  .conteudo {
+    max-width: 30rem;
+    width: 100%;
 
-        p {
-            font-size: 1.125rem;
-            color: #444;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 2rem;
-
-
-            .btnUm {
-                padding: 12px 24px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                background: #00745A;
-                color: #fff;
-
-                &:hover {
-                    background-color: #02634c;
-                }
-            }
-
-            .btnDois {
-                padding: 12px 24px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 1rem;
-                border: 2px solid #00745A;
-                color: #00745A
-            }
-        }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 1.5rem 0;
+      color: #000;
     }
+
+    p {
+      font-size: 1.125rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 2rem;
+
+      a {
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .btnUm {
+        background: #00745A;
+        color: #fff;
+      }
+
+      .btnDois {
+        border: 0.125rem solid #00745A;
+        color: #00745A;
+      }
+    }
+  }
 }
 
-.sectionMissao{
-    background: #036b5a;
-    color: #fff;
-    padding: 100px;     
+
+.sectionMissao {
+  background: #036b5a;
+  color: #fff;
+  padding: 8vh 8vw;
+  display: flex;
+  flex-direction: column;
+
+  .missao {
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  .boxCards {
     display: flex;
-    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
 
-    .missao{
-        margin-bottom: 40px;
-        
-        h2 {
-        font-size: 42px;
+    article {
+      flex: 1 1 18rem;
+      max-width: 28rem;
+
+      padding: 3rem;
+      border-radius: 0.875rem;
+      border: 0.0625rem solid #fff;
+      text-align: center;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
         font-weight: 700;
-        margin-bottom: 10px;
-        
-        p {
-        font-size: 18px;       
-        
-        }    
-        }
-    }   
-      
-    .boxCards {
-        display: flex;
-        gap: 25px;
-        
-        justify-content: space-between;
-        
+      }
 
-        article {
-            flex-wrap: wrap;
-            width: 450px;
-            height: 242px;
-            padding: 48px;
-            border-radius: 14px;
-            border: 1px solid #FFFFFF;
-            text-align: center;
-            gap: 30px;
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
 
-            h3 {
-            font-size: 30px;
-            margin-bottom: 15px;
-            font-weight: 700;
-            font-style: bold;
-            font-size: 30px;
-            }
 
-            p {
-            font-size: 30px;
-            margin-bottom: 15px;
-            font-weight: 400;            
-            font-size: 19px;            
-            }
-        }
-    } 
+.sectionImpacto {
+  background: #fff;
+  color: #000;
+  padding: 8vh 8vw;
+  display: flex;
+  flex-direction: column;
+
+  .impacto {
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+  }
+
+  .boxCardsImpacto {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    article {
+      flex: 1 1 15rem;
+      max-width: 20rem;
+
+      padding: 3rem;
+      border-radius: 0.875rem;
+      border: 0.0625rem solid #000;
+      text-align: center;
+
+      h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #00745A;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 }
