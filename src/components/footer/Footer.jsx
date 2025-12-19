@@ -40,11 +40,14 @@ const Footer = () => {
           <a href="#">Instagram</a>
           <a href="#">LinkedIn</a>
         </div>
+
+        <div className={s.direitos}>
+        © 2025 Médicos e Dentistas pela Comunidade. Todos os direitos reservados.
+        </div>
+        
       </div>
 
-      <div className={s.direitos}>
-        © 2025 Médicos e Dentistas pela Comunidade. Todos os direitos reservados.
-      </div>
+      
     </footer>
   )
 }

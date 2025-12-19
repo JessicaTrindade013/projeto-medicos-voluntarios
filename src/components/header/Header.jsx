@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import s from './header.module.scss'
 import Logo  from '../../assets/logo.png'
+import Menu from '../../assets/menu.png'
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
       <nav>
         <Link to='/'>Home</Link>
         <Link to='/voluntario'>Seja Voluntário</Link>
+        <img className={s.menuMobile} src={Menu} alt="Menu" />
       </nav>
     </header>
   )

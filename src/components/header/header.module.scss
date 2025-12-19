@@ -38,3 +38,34 @@
         }
     }
 }
+
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .header {
+    padding: 1rem 5vw;
+  }
+
+  .BoxLogo {
+    a {
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+  }
+
+  nav {
+    gap: 0;
+
+    a {
+      display: none;
+    }
+  }
+
+  .menuMobile {
+    display: flex;
+    width: 1.6rem;
+    cursor: pointer;
+  }
+}

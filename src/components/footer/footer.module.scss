@@ -93,17 +93,44 @@
 }
 
 @media (max-width: 768px) {
-  .footerTop {
+  .footer {
+    display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    align-items: center;
+    text-align: center;
   }
 
-  .footer {
-    text-align: center;
+  .footerTop {
+    display: contents;
+  }
+
+  .BoxLogo {
+    order: 1;
+    max-width: 22rem;
+    margin-bottom: 2rem;
+  }
+
+  .BoxContato {
+    order: 2;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   .BoxContato .item {
     justify-content: center;
   }
-}
 
+  .BoxRedes {
+    order: 3;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .direitos {
+    order: 4;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
