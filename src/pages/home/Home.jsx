@@ -1,6 +1,8 @@
 import s from './home.module.scss'
 import Saude from '../../assets/saude.png'
 import Doutor from '../../assets/doutor.png'
+import { Link } from 'react-router-dom'
+
 
 const Home = () => {
   return (
@@ -16,9 +18,12 @@ const Home = () => {
           <p>Um projeto dedicado a oferecer atendimento médico e odontológico gratuito para pessoas que mais precisam na nossa comunidade.</p>
 
           <div className={s.buttons}>
-            <a className={s.btnUm} href="">Seja Voluntário</a>
-            <a className={s.btnDois} href="">Como Ajudar</a>
+            
+            <Link to='/voluntario'>Seja Voluntário</Link>
+            <Link to='/como-ajudar'>Como Ajudar</Link>
+                       
           </div>
+          
         </div>
 
         <div className={s.doutorImgBox}>

@@ -4,12 +4,11 @@
   padding: 6vh 8vw;
 }
 
-.footerTop {
+.footerTop { 
   display: flex;
   justify-content: space-between;
   gap: 5rem;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 
 .BoxLogo {
@@ -85,8 +84,10 @@
 }
 
 .direitos {
-  border-top: 0.0625rem solid #1e1e1e;
-  padding-top: 1.25rem;
+   width: 100%;
+  border-top: 1px solid #1e1e1e;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
   text-align: center;
   font-size: 0.8125rem;
   color: #9e9e9e;
@@ -94,43 +95,44 @@
 
 @media (max-width: 768px) {
   .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 4vh 6vw;
   }
 
   .footerTop {
-    display: contents;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
   }
 
   .BoxLogo {
-    order: 1;
-    max-width: 22rem;
-    margin-bottom: 2rem;
+    width: 48%;
   }
 
   .BoxContato {
-    order: 2;
-    align-items: center;
-    margin-bottom: 2rem;
+    width: 48%;
   }
 
   .BoxContato .item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .BoxRedes {
-    order: 3;
-    align-items: center;
-    margin-bottom: 2rem;
+    width: 100%;
   }
 
   .direitos {
-    order: 4;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding-top: 1rem;
     text-align: center;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .BoxLogo,
+  .BoxContato {
+    width: 100%;
   }
 }

@@ -31,26 +31,24 @@
       gap: 2rem;
 
       a {
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        font-weight: 500;
         text-decoration: none;
+        padding: 0.6rem 1.3rem;
+        border-radius: 8px;
+        font-weight: 600;
+        border: 1px solid #00745A;
       }
 
-      .btnUm {
-        background: #00745A;
+      a:first-child {
+        background-color: #00745A;
         color: #fff;
       }
 
-      .btnDois {
-        border: 0.125rem solid #00745A;
+      a:last-child {                
         color: #00745A;
       }
-    }
+    }   
   }
 }
-
 
 .sectionMissao {
   background: #036b5a;
@@ -161,3 +159,4 @@
     justify-content: center;
   }
 }
+

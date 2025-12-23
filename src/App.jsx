@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer'
 import './globalStyle.scss'
 import Home from './pages/home/Home'
 import Voluntario from './pages/voluntario/Voluntario'
+import ComoAjudar from './pages/como-ajudar/ComoAjudar'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/voluntario' element={<Voluntario/>}/>
+        <Route path="/como-ajudar" element={<ComoAjudar/>}/>
       </Routes>
       <Footer />
       
